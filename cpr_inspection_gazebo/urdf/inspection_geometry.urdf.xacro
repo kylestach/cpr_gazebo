@@ -12,12 +12,6 @@
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae" scale="2 2 1"/>
       </geometry>
     </visual>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
-      <geometry>
-        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
-      </geometry>
-    </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
@@ -33,6 +27,69 @@
       </surface>
     </collision>
   </link>
+  <link name="inspection_water_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.4" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.6" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.8" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.0" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.2" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.4" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.6" rpy="0 0 3.141592653589793"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="base_to_water_joint" type="fixed">
+    <parent link="inspection_world_link" />
+    <child link="inspection_water_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <axis xyz="0 0 0" />
+  </joint>
+
 
   <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
   <xacro:cpr_base_station name="base_station" parent="inspection_world_link">
