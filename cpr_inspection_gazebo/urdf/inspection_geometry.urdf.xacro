@@ -29,6 +29,61 @@
   </link>
   <link name="inspection_water_link">
     <visual>
+      <origin xyz="0 0 0" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.4" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.6" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.8" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.0" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.2" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.4" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -1.6" rpy="3.141592 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
+      </geometry>
+    </visual>
+
+    <visual>
       <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>

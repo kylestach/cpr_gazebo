@@ -41,11 +41,4 @@
     <node name="edge_straight_spawner7" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight7 -param edge_straight_description2 -x -6 -y 3 -z 0.1 -Y 1.5707" />
     <node name="edge_corner_spawner6" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner6 -param edge_corner_description -x -6 -y 0 -z 0.1 -Y 1.5707" />
     <node name="edge_straight_spawner8" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight8 -param edge_straight_description2 -x -3 -y 0 -z 0.1 -Y 0" />
-
-    <include file="$(find offroad_gazebo)/launch/spawn_custom_jackal.launch">
-        <arg name="x" value="0"/>
-        <arg name="y" value="0"/>
-        <arg name="z" value="3"/>
-        <arg name="yaw" value="0"/>
-    </include>
 </launch>
